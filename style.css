@@ -1,0 +1,281 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(179, 179, 241);
+    font-family: "DotGothic16", monospace;
+    margin: 0;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.profielfoto {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.content-left {
+    width: min(100%, 1000px);
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.row-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    align-items: flex-start;
+}
+.txt1{
+    text-align: center;
+}
+
+.txt2 {
+    background-color: white;
+    width: 100%;
+    max-width: 900px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.05);
+    text-align: left;
+}
+
+.txt2 a {
+    color: #6b6bd6;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.txt2 a:hover {
+    color: #333;
+    text-decoration: none;
+}
+
+.tabs-container {
+    width: 300px;
+    flex: 0 0 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: sticky;
+    top: 20px;
+    align-self: flex-start;
+}
+
+.tab {
+    width: 100%;
+    height: 65px;
+    box-sizing: border-box;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: large;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.tab:hover {
+    background-color: #f0f0f0;
+    transform: translateX(5px);
+}
+
+.icon {
+    width: 45px;
+    height: 45px;
+    margin-right: 12px;
+    flex-shrink: 0;
+    image-rendering: pixelated;
+}
+
+.side-gif {
+    max-width: 180px;
+    height: auto;
+    border-radius: 15px;
+    align-self: flex-start;
+}
+
+.exome-image {
+    width: 520px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    margin: 0 auto 20px;
+    background-color: white;
+    image-rendering: pixelated;
+}
+
+
+.link-card {
+    display: flex;
+    flex: 1 ;
+    flex-direction: column;
+    color: #333;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 15px 0;
+}
+
+.link-card-img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+}
+
+
+
+.portfolio-container {
+    background-color: white;
+    width: min(100%, 1000px);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 12px;
+    text-align: left;
+}
+
+.contact-form label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 9px 10px;
+    border: 2px solid #d0d0f0;
+    border-radius: 10px;
+    background-color: #f9f9ff;
+    color: #333;
+    font-family: "DotGothic16", monospace;
+    font-size: 13px;
+    outline: none;
+    transition: 0.2s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: rgb(107, 107, 214);
+    background-color: white;
+    box-shadow: 2px 2px 8px rgba(107, 107, 214, 0.15);
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 90px;
+}
+
+.contact-form button {
+    margin-top: 5px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(107, 107, 214);
+    color: white;
+    font-family: "DotGothic16", monospace;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: rgb(85, 85, 180);
+    transform: translateX(3px);
+}
+
+
+
+
+@media (max-width: 900px) {
+    body {
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .tabs-container {
+        width: 100%;
+        max-width: 700px;
+        order: -1;
+        position: static;
+    }
+    .content-left {
+        width: 100%;
+        max-width: 700px;
+    }
+
+    .row-container {
+        flex-direction: column;
+    }
+
+    .txt2 {
+        width: 100%;
+        max-width: none;
+    }
+
+    .side-gif {
+        max-width: 100%;
+        align-self: center;
+    }
+
+    .exome-image {
+        width: 100%;
+        max-width: 520px;
+    }
+}
+
+
+
+
+@media (max-width: 500px) {
+    body {
+        padding: 10px;
+    }
+    .tabs-container {
+        width: 100%;
+    }
+    .tab {
+        height: 60px;
+        font-size: 14px;
+    }
+    .icon {
+        width: 40px;
+        height: 40px;
+    }
+    .txt2 {
+        padding: 15px;
+    }
+    .portfolio-container {
+        padding: 20px;
+    }
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mijn Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.google.com/specimen/DotGothic16" rel="stylesheet">
+</head>
+
+
+
+<body>
+    <div class="content-left">
+        <div class="txt1">
+        <h1>Single cell whole exome</h1>
+    </div>
+
+    <div class="row-container"> 
+        <div class="txt2">
+            <p>
+       I did my graduate project at UMCG, where I worked on single-cell whole exome sequencing.
+
+Single-cell sequencing enables the study of heterogeneity in cancer cells by revealing low-frequency somatic variants (mutations affecting a single nucleotide) that are typically missed in bulk sequencing. These somatic mutations allow cancer cells to proliferate, invade surrounding tissue, metastasize, and develop treatment resistance. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5313163/" target="_blank"
+                   rel="noopener noreferrer">WES hybridization pulls out only the coding parts of the genome (~2%).</a> Because WES sequences a smaller fraction of the genome, it is more cost-efficient to achieve a higher depth per base compared to WGS.
+        </p>
+        </div>
+    </div>
+
+    <div class="row-container">
+     <div class="txt2">
+            <p>
+           The main challenge of single-cell sequencing is that an individual cell contains only about 6 pg of DNA, with just a few copies of each genomic locus. This creates a dependence on whole-genome amplification (WGA); unfortunately, <a href="https://doi.org/10.1016/j.crmeth.2025.101025" target="_blank"
+                   rel="noopener noreferrer">single-cell WGA (scWGA) methods can introduce technical biases that complicate the interpretation of downstream data. </a>
+      
+        </p>
+    </div> 
+    </div>
+    
+   
+
+    <div class="row-container" > 
+        <div class="txt2">
+            <p>My project focused on determining which amplification kit introduced the fewest biases, using copy number analysis and variant calling. 
+                I did variant calling inside a linux container within my windows computer (Python). After which I did the visualisation of the results with R. 
+                My work helped the lab determine which amplification method to continue testing across different cell lines.
+       </p>
+        </div>
+    </div>
+    <img src="exomebig.png" class="exome-image" alt="Exome diagram" > 
+    </div>
+
+
+    <nav class="tabs-container">
+        <a href="index.html" class="tab"> <img src="flask.png" class = "icon" > Home page</a>
+        <a href="info.html" class="tab"><img src="cell.png" class="icon" > About me</a>
+        <a href="skills.html" class="tab"> <img src="coli.png" class="icon" >Skills</a>
+        <a href="exome.html" class="tab"><img src="DNA.png" class="icon"> Single Cell Whole Exome Sequencing</a>
+        <a href="pore.html" class="tab"><img src="pore.png" class="icon"> Nanopore sensing </a>
+        <a href="research.html" class="tab"> <img src="cancer.png" class="icon"> Research </a>
+        <div class="info">
+     <div class="info">
+    <p><b>Contact</b></p>
+
+    <form class="contact-form" action="https://formspree.io/f/meajvapj" method="POST">
+
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Send</button>
+
+    </form>
+
+    <p>Leeuwarden, NL</p>
+</div>
+    
+    </div>
+
+    
+
+</body>
+</html>
