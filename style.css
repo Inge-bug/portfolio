@@ -136,14 +136,14 @@ body {
     margin: 15px 0;
 }
 
-.link-cart a {
+.link-card a {
     color: #6b6bd6;
     text-decoration: none;
     font-weight: bold;
     transition: 0.2s;
 }
 
-.link-cart a:hover {
+.link-card a:hover {
     color: #333;
     text-decoration: none;
 }
